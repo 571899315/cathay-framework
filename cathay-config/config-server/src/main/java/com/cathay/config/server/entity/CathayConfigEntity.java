@@ -6,6 +6,7 @@ import lombok.Setter;
 
 import java.io.Serializable;
 import java.util.Date;
+import javax.persistence.*;
 
 @Getter
 @Setter
@@ -13,11 +14,13 @@ public class CathayConfigEntity extends BaseEntity {
 
 
     public Serializable getId() {
-        return null;
+        return id;
     }
 
 
     /** 主键 */
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     /** 应用名称 */
