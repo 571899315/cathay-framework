@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>cathay-config</artifactId>
+        <groupId>com.cathay</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>config-server</artifactId>
+
+
+
+
+
+    <dependencies>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.1.8</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <optional>true</optional>
+            <version>1.3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.cathay</groupId>
+            <artifactId>cathay-springboot-starter</artifactId>
+            <version>${cathay.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+            <version>1.3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <version>${spring-boot.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot</artifactId>
+            <version>${spring-boot.version}</version>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>com.cathay</groupId>
+            <artifactId>cathay-common</artifactId>
+            <version>${cathay.version}</version>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>com.cathay</groupId>
+            <artifactId>cathay-cache</artifactId>
+            <version>${cathay.version}</version>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>com.cathay</groupId>
+            <artifactId>cathay-mybatis</artifactId>
+            <version>${cathay.version}</version>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>com.cathay</groupId>
+            <artifactId>cathay-kafka</artifactId>
+            <version>${cathay.version}</version>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>com.cathay</groupId>
+            <artifactId>cathay-scheduler</artifactId>
+            <version>${cathay.version}</version>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>tk.mybatis</groupId>
+            <artifactId>mapper</artifactId>
+            <version>3.4.3</version>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <version>${spring-boot.version}</version>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+
+
+
+
+
+
+</project>
