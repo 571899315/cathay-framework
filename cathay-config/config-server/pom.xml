@@ -32,11 +32,7 @@
             <optional>true</optional>
             <version>1.3.1</version>
         </dependency>
-        <dependency>
-            <groupId>com.cathay</groupId>
-            <artifactId>cathay-springboot-starter</artifactId>
-            <version>${cathay.version}</version>
-        </dependency>
+
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis-spring</artifactId>
@@ -55,43 +51,8 @@
             <optional>true</optional>
         </dependency>
 
-        <dependency>
-            <groupId>com.cathay</groupId>
-            <artifactId>cathay-common</artifactId>
-            <version>${cathay.version}</version>
-            <optional>true</optional>
-        </dependency>
 
-        <dependency>
-            <groupId>com.cathay</groupId>
-            <artifactId>cathay-cache</artifactId>
-            <version>${cathay.version}</version>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>com.cathay</groupId>
-            <artifactId>cathay-mybatis</artifactId>
-            <version>${cathay.version}</version>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>com.cathay</groupId>
-            <artifactId>cathay-kafka</artifactId>
-            <version>${cathay.version}</version>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>com.cathay</groupId>
-            <artifactId>cathay-scheduler</artifactId>
-            <version>${cathay.version}</version>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>tk.mybatis</groupId>
-            <artifactId>mapper</artifactId>
-            <version>3.4.3</version>
-            <optional>true</optional>
-        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>

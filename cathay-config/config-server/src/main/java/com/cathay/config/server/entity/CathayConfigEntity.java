@@ -1,16 +1,14 @@
 package com.cathay.config.server.entity;
 
-import com.cathay.mybatis.core.BaseEntity;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.io.Serializable;
 import java.util.Date;
-import javax.persistence.*;
 
 @Getter
 @Setter
-public class CathayConfigEntity extends BaseEntity {
+public class CathayConfigEntity  {
 
 
     public Serializable getId() {
@@ -19,8 +17,6 @@ public class CathayConfigEntity extends BaseEntity {
 
 
     /** 主键 */
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     /** 应用名称 */
