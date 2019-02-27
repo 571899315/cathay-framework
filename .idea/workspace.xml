@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b87f15f7-d5a9-499a-af2e-10276e677a14" name="Default Changelist" comment="commit">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cathay-config/cathay-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cathay-config/config-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cathay-config/cathay-common/src/main/java/com/cathay/config/common/cache/ServerCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/cathay-config/config-common/src/main/java/com/cathay/config/common/cache/ServerCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cathay-config/cathay-common/src/main/java/com/cathay/config/common/config/AppConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/cathay-config/config-common/src/main/java/com/cathay/config/common/config/AppConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cathay-config/cathay-common/src/main/java/com/cathay/config/common/io/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/cathay-config/config-common/src/main/java/com/cathay/config/common/io/FileUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cathay-config/cathay-common/src/main/java/com/cathay/config/common/util/SpringBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/cathay-config/config-common/src/main/java/com/cathay/config/common/util/SpringBeanFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cathay-config/cathay-common/src/main/java/com/cathay/config/common/zk/ServerListListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/cathay-config/config-common/src/main/java/com/cathay/config/common/zk/ServerListListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cathay-config/cathay-common/src/main/java/com/cathay/config/common/zk/ZkUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/cathay-config/config-common/src/main/java/com/cathay/config/common/zk/ZkUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cathay-config/config-admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cathay-config/config-admin/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cathay-config/config-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cathay-config/config-client/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cathay-config/config-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cathay-config/config-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cathay-config/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cathay-config/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cathay-config/target/" />
     <ignored path="$PROJECT_DIR$/cathay-config/config-server/target/" />
@@ -45,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cathay-config/config-client/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+            <state relative-caret-position="374">
+              <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -139,12 +125,6 @@
               <item name="cathay-config" type="462c0819:PsiDirectoryNode" />
               <item name="config-client" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="cathay-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cathay-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="cathay-config" type="462c0819:PsiDirectoryNode" />
-              <item name="config-common" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -156,7 +136,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551258576074" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551258751517" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -193,7 +173,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1551254501453</updated>
-      <workItem from="1551254502909" duration="3995000" />
+      <workItem from="1551254502909" duration="4170000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1551256889265</created>
@@ -213,7 +193,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3995000" />
+    <option name="totallyTimeSpent" value="4170000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="0" />
@@ -224,7 +204,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.36591277" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.36591277" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -249,6 +229,37 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.36591277" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="1" />
+      <window_info anchor="bottom" id="Spring" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Find" order="7" />
+      <window_info anchor="bottom" id="Run" order="8" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="12" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Theme Preview" order="1" />
+      <window_info anchor="right" id="Capture Analysis" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -416,8 +427,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cathay-config/config-client/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        <state relative-caret-position="374">
+          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
         </state>
       </provider>
     </entry>
