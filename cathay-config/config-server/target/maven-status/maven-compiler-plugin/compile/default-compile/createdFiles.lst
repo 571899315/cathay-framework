@@ -1,0 +1,3 @@
+com/cathay/config/server/entity/CathayConfigEntity.class
+com/cathay/config/server/mapper/CathayConfigMapper.class
+com/cathay/config/server/ServerApplication.class
