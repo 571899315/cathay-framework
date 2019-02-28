@@ -1,60 +1,71 @@
 package com.cathay.config.common.zk;
 
-import com.alibaba.fastjson.JSON;
-import com.cathay.config.common.cache.ServerCache;
-import org.I0Itec.zkclient.IZkChildListener;
-import org.I0Itec.zkclient.ZkClient;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.zookeeper.*;
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-
-import java.util.List;
 
 
 @Component
-public class ZkUtil {
+@Slf4j
+public class ZkUtil implements InitializingBean, Watcher {
 
-    private static Logger logger = LoggerFactory.getLogger(ZkUtil.class);
+
+    private ZooKeeper zk;
 
 
-    @Autowired
-    private ZkClient zkClient;
+    @Value("${zk.server.address}")
+    private String zkServers;
 
-    @Autowired
-    private ServerCache serverCache;
+    @Value("${zk.server.timeout}")
+    private int timeout;
 
+    private static final String REGISTRY_PATH = "/registry";
+
+
+    public void afterPropertiesSet() throws Exception {
+        zk = new ZooKeeper(zkServers, timeout, this);
+    }
 
     /**
-     * 监听事件
-     *
-     * @param path
+     * 注册服务
      */
-    public void subscribeEvent(String path) {
-        zkClient.subscribeChildChanges(path, new IZkChildListener() {
-            @Override
-            public void handleChildChange(String parentPath, List<String> currentChilds) throws Exception {
-                logger.info("清除/更新本地缓存 parentPath=【{}】,currentChilds=【{}】", parentPath, currentChilds.toString());
-
-                //更新所有缓存/先删除 再新增
-                serverCache.updateCache(currentChilds);
+    public void register(String serviceName, String serviceAddress) {
+        try {
+            String registryPath = REGISTRY_PATH;
+            if (zk.exists(registryPath, false) == null) {
+                zk.create(registryPath, null, ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
+                log.info("create registry node:{}", registryPath);
             }
-        });
-
-
+            /**
+             * 创建服务节点（持久节点）
+             */
+            String servicePath = registryPath + "/" + serviceName;
+            if (zk.exists(servicePath, false) == null) {
+                zk.create(servicePath, null, ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
+                log.debug("create service node:{}", servicePath);
+            }
+            /**
+             * 创建地址节点
+             */
+            String addressPath = servicePath + "/address-";
+            String addressNode = zk.create(addressPath, serviceAddress.getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL_SEQUENTIAL);
+            log.debug("create address node:{} => {}", addressNode, serviceAddress);
+        } catch (Exception e) {
+            log.error("create node failure", e);
+        }
     }
 
 
-    /**
-     * 获取所有注册节点
-     *
-     * @return
-     */
-    public List<String> getAllNode() {
-        List<String> children = zkClient.getChildren("/route");
-        logger.info("查询所有节点成功=【{}】", JSON.toJSONString(children));
-        return children;
+
+
+
+
+
+
+
+    public void process(WatchedEvent watchedEvent) {
+
     }
-
-
 }
