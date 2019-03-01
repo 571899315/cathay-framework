@@ -1,9 +1,0 @@
-/Users/chenkang/cathay-framework/cathay-config/config-server/src/main/java/com/cathay/config/server/service/impl/CathayConfigServiceImpl.java
-/Users/chenkang/cathay-framework/cathay-config/config-server/src/main/java/com/cathay/config/server/netty/ServerInitializer.java
-/Users/chenkang/cathay-framework/cathay-config/config-server/src/main/java/com/cathay/config/server/ServerApplication.java
-/Users/chenkang/cathay-framework/cathay-config/config-server/src/main/java/com/cathay/config/server/service/CathayConfigService.java
-/Users/chenkang/cathay-framework/cathay-config/config-server/src/main/java/com/cathay/config/server/entity/CathayConfigEntity.java
-/Users/chenkang/cathay-framework/cathay-config/config-server/src/main/java/com/cathay/config/server/netty/ConfigServer.java
-/Users/chenkang/cathay-framework/cathay-config/config-server/src/main/java/com/cathay/config/server/config/ServerInit.java
-/Users/chenkang/cathay-framework/cathay-config/config-server/src/main/java/com/cathay/config/server/netty/ServerHandle.java
-/Users/chenkang/cathay-framework/cathay-config/config-server/src/main/java/com/cathay/config/server/mapper/CathayConfigMapper.java
