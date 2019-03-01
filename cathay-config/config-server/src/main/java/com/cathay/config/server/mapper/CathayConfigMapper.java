@@ -7,6 +7,10 @@ import java.util.List;
 public interface CathayConfigMapper {
 
 
+
+    Integer insert(CathayConfigEntity CathayConfigEntity);
+
+
     /**
      * 根据ID更新 配置信息全部属性
      *

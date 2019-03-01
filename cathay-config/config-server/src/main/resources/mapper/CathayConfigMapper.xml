@@ -9,13 +9,13 @@
         <result column="app_env" property="appEnv"/>
         <result column="key" property="key"/>
         <result column="value" property="value"/>
-        <result column="COMMENT" property="cOMMENT"/>
+        <result column="comment" property="comment"/>
         <result column="gmt_created" property="gmtCreated"/>
         <result column="gmt_modified" property="gmtModified"/>
     </resultMap>
 
     <sql id="MybatisCathay-configDAO_all_column_fields">
-	      id,app_name,app_env,key,value,COMMENT,gmt_created,gmt_modified
+	      id,app_name,app_env,key,value,comment,gmt_created,gmt_modified
  	</sql>
     <!-- 只有varchar char text类型 做 !='' 判断，生成代码时,其他类型时只做!=null 决断 0或fasle与空''是相同的，在mybatis中的动态语句中 -->
     <sql id="MybatisCathay-configDAO_dynamic_where_fields"><!-- xml转义字符需要 <![CDATA[   ]]> 标签-->
@@ -24,7 +24,7 @@
             <if test="appEnv != null  and appEnv != '' "> AND app_env=#{appEnv} </if>
             <if test="key != null  and key != '' "> AND key=#{key} </if>
             <if test="value != null  and value != '' "> AND value=#{value} </if>
-            <if test="cOMMENT != null  and cOMMENT != '' "> AND COMMENT=#{cOMMENT} </if>
+            <if test="comment != null  and comment != '' "> AND comment=#{comment} </if>
         </where>
     </sql>
 
@@ -37,26 +37,22 @@
         id = #{id}
     </select>
 
-    <insert id="MybatisCathay-configDAO_insert" parameterType="com.cathay.config.server.entity.CathayConfigEntity" useGeneratedKeys="true">
-        <selectKey resultType="long" keyProperty="id" order="AFTER">
-            SELECT LAST_INSERT_ID() AS id
-        </selectKey>
+    <insert id="insert" parameterType="com.cathay.config.server.entity.CathayConfigEntity" useGeneratedKeys="true">
+
         INSERT INTO cathay-config(
-        id,
         app_name,
         app_env,
         key,
         value,
-        COMMENT,
+        comment,
         gmt_created,
         gmt_modified
         )values(
-        #{id},
         #{appName},
         #{appEnv},
         #{key},
         #{value},
-        #{cOMMENT},
+        #{comment},
         #{gmtCreated},
         #{gmtModified}
         )
@@ -69,7 +65,7 @@
 					app_env = #{appEnv},
 					key = #{key},
 					value = #{value},
-					COMMENT = #{cOMMENT},
+					comment = #{comment},
 					gmt_modified = #{gmtModified}
 		WHERE
 			id = #{id}
@@ -86,7 +82,7 @@
             <if test="appEnv != null  and appEnv != '' ">app_env=#{appEnv},</if>
             <if test="key != null  and key != '' ">key=#{key},</if>
             <if test="value != null  and value != '' ">value=#{value},</if>
-            <if test="cOMMENT != null  and cOMMENT != '' ">COMMENT=#{cOMMENT},</if>
+            <if test="comment != null  and comment != '' ">comment=#{comment},</if>
             <if test="gmtModified != null ">gmt_modified=#{gmtModified},</if>
         </set>
         WHERE id = #{id}
