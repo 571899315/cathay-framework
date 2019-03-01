@@ -12,7 +12,7 @@ public class ProtocolUtil {
      * @param protocol
      * @return
      */
-    public static byte[] encode(RequestProto.CIMReqProtocol protocol) {
+    public static byte[] encode(RequestProto.ReqProtocol protocol) {
         return protocol.toByteArray();
     }
 
@@ -23,7 +23,7 @@ public class ProtocolUtil {
      * @return
      * @throws InvalidProtocolBufferException
      */
-    public static RequestProto.CIMReqProtocol decode(byte[] bytes) throws InvalidProtocolBufferException {
-        return RequestProto.CIMReqProtocol.parseFrom(bytes);
+    public static RequestProto.ReqProtocol decode(byte[] bytes) throws InvalidProtocolBufferException {
+        return RequestProto.ReqProtocol.parseFrom(bytes);
     }
 }

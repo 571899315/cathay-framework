@@ -1,3 +1,9 @@
-com/cathay/config/server/entity/CathayConfigEntity.class
+com/cathay/config/server/netty/ServerHandle.class
 com/cathay/config/server/mapper/CathayConfigMapper.class
+com/cathay/config/server/config/ServerInit.class
+com/cathay/config/server/netty/ConfigServer.class
+com/cathay/config/server/netty/ServerInitializer.class
+com/cathay/config/server/entity/CathayConfigEntity.class
+com/cathay/config/server/service/impl/CathayConfigServiceImpl.class
+com/cathay/config/server/service/CathayConfigService.class
 com/cathay/config/server/ServerApplication.class

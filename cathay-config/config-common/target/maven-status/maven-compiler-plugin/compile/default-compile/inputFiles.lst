@@ -1,3 +1,6 @@
 /Users/chenkang/cathay-framework/cathay-config/config-common/src/main/java/com/cathay/config/common/zk/ZkUtil.java
+/Users/chenkang/cathay-framework/cathay-config/config-common/src/main/java/com/cathay/config/common/protocol/RequestProto.java
+/Users/chenkang/cathay-framework/cathay-config/config-common/src/main/java/com/cathay/config/common/protocol/ResponseProto.java
+/Users/chenkang/cathay-framework/cathay-config/config-common/src/main/java/com/cathay/config/common/protocol/ProtocolUtil.java
 /Users/chenkang/cathay-framework/cathay-config/config-common/src/main/java/com/cathay/config/common/io/FileUtil.java
 /Users/chenkang/cathay-framework/cathay-config/config-common/src/main/java/com/cathay/config/common/util/SpringBeanFactory.java

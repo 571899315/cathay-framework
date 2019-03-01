@@ -1,3 +1,16 @@
+com/cathay/config/common/protocol/ResponseProto$CIMResProtocolOrBuilder.class
+com/cathay/config/common/protocol/ProtocolUtil.class
+com/cathay/config/common/protocol/ResponseProto$1.class
+com/cathay/config/common/protocol/RequestProto.class
 com/cathay/config/common/zk/ZkUtil.class
-com/cathay/config/common/util/SpringBeanFactory.class
 com/cathay/config/common/io/FileUtil.class
+com/cathay/config/common/protocol/ResponseProto$CIMResProtocol.class
+com/cathay/config/common/protocol/RequestProto$ReqProtocol$Builder.class
+com/cathay/config/common/util/SpringBeanFactory.class
+com/cathay/config/common/protocol/RequestProto$ReqProtocolOrBuilder.class
+com/cathay/config/common/protocol/RequestProto$1.class
+com/cathay/config/common/protocol/ResponseProto.class
+com/cathay/config/common/protocol/ResponseProto$CIMResProtocol$Builder.class
+com/cathay/config/common/protocol/RequestProto$ReqProtocol$1.class
+com/cathay/config/common/protocol/ResponseProto$CIMResProtocol$1.class
+com/cathay/config/common/protocol/RequestProto$ReqProtocol.class
